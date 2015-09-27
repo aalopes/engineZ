@@ -1,0 +1,5 @@
+Run:
+./autogen.sh
+./configure
+./make
+./make install (potentially as sudo)

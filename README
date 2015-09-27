@@ -1,0 +1,13 @@
+EngineZ is an on-going project, still in a very early alpha phase,
+which aims to be a sort of game engine for side-scrolling games.
+At the moment I will be using the sprites from CometZ 
+<http://sourceforge.net/projects/cometz/>.
+
+Since I am using the SDL library, this should be multi-platform, I
+have indeed tested it successfuly on Linux and Windows.
+
+As for the build mechanism, at the moment I am using GNU's Autotools
+(althoug do keep a separate Visual Studio tree for Windows).
+
+Alexandre Lopes
+27.09.2015

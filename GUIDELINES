@@ -1,0 +1,51 @@
+1) This project shall be written in C++. Care shold be taken to avoid using C only
+   constructs. Also, coding should try to use as much the C++ available types
+   (otherwise I would have chosen C).
+
+2) Naming conventions will be adapted from Java (better standardized than C/C++)
+
+3) Identifiers should use a 'lowerCamelCase' convention exept for classes, where
+   one should use an 'UpperCamelCase'.
+
+4) When appending a numeral to an identifier, an underscore should be used 
+  'lowerCamelCase_1'.
+
+5) Class member variables should be appended with an 'm'
+
+6) Class member variables should be made private and only accessible through set
+   and get methods (otherwise it's C style struct ...). The get methods should 
+   be declared as const, to make sure they do not change any class member.
+
+7) Class and functions definitions/declarations should go into .h files and 
+   implementation into .cpp files. This is true for class methods as well.
+
+8) Whenever using class members in methods of the same class, the scope 
+   resolution operator (::) should not be used. Although legal, this makes 
+   everything extremely long and it would in any case make rule 5) useless 
+   (alternatively, one could use the 'this keyword, but I see no need').
+
+9) If there's the need to return two values, the C++11 pair should be used
+   whenever possible. For more than two values, a struct should be used.
+   The pair alternative has the advantage that one avoids defining a struct
+   in a header. In any case, for several outputs, using ordering alone 
+   (e.g. tuple) to identify the members, might be too cumbersome and unlogical,
+   therefore a struct is prefered. An alternative would be to change a pointer,
+   passed as an input argument, but that makes it difficult to know a priori, 
+   which are input arguments and which are output. 
+
+9) Pre-processor macros should be capitalized and words should be separated by 
+   an underscore.
+
+10) Header guards should follow the rules for pre-processor macros with '_H' 
+    appended.
+
+11) Identation should use 4 spaces (no tabs!).
+
+12) An effort should be done to keep lines under 80 characters, except if it 
+    impairs understanding. In this case it should exceed 120 characters.
+
+13) Code shall be documented using Doxygen. Documentation should go 
+    preferentially on the implementation side (i.e cpp).
+
+Alexandre Lopes
+13.09.2015
